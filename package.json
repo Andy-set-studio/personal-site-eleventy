@@ -1,0 +1,26 @@
+{
+  "name": "11ty-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "sass": "sass src/scss/global.scss:dist/css/global.css",
+    "start": "concurrently 'eleventy --serve --quiet' 'npm run sass -- --watch'",
+    "production": "NODE_ENV=production eleventy && npm run sass -- --style=compressed --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "concurrently": "^8.0.1",
+    "gorko": "^0.9.1",
+    "moment": "^2.29.4",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
