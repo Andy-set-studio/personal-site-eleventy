@@ -1,0 +1,254 @@
+/* 
+  Global styles 
+
+  Low-specificity, global styles that apply to the whole 
+  project: https://cube.fyi/css.html
+*/
+
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+  font-size: var(--size-base);
+  font-family: var(--font-base);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: auto;
+}
+
+h1 {
+  font-size: var(--size-step-3);
+}
+
+h2 {
+  font-size: var(--size-step-2);
+}
+
+h3 {
+  font-size: var(--size-step-1);
+  line-height: 1.2;
+}
+
+:is(h1, h2, h3) {
+  display: flex;
+  gap: 1ch;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+:is(h1, h2, h3) check-mark {
+  margin-inline-start: -0.5ch;
+}
+
+:is(h1, h2, h3)::before {
+  color: var(--color-mid);
+}
+
+a {
+  color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2ex;
+  text-decoration-color: var(--color-primary);
+}
+
+[class*='bg-primary'] a {
+  text-decoration-color: var(--color-dark);
+}
+
+a:hover {
+  text-underline-offset: 0.1ex;
+}
+
+time {
+  display: block;
+  font-style: italic;
+}
+
+p,
+li,
+dl,
+blockquote,
+figcaption {
+  max-width: 65ch;
+}
+
+figcaption {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-block-start: 0.5em;
+  color: var(--color-mid);
+  text-align: center;
+  max-width: unset;
+}
+
+blockquote {
+  font-style: italic;
+  padding-inline-start: 1em;
+  border-inline-start: 0.2em solid;
+  border-color: var(--color-primary);
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+img {
+  height: auto;
+}
+
+img[src*='.svg'] {
+  width: 100%;
+}
+
+[role='list'] {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-mid);
+  transform: translateY(-1px);
+  margin: var(--space-l-xl) 0 !important;
+  max-width: 55rem;
+}
+
+:focus-visible {
+  outline: 1px dotted var(--color-dark);
+  outline-offset: 0.25rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+code {
+  color: var(--color-primary-shade);
+  font-weight: 700;
+  font-size: 1em;
+  hyphens: none;
+  tab-size: 2;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+pre {
+  padding: var(--space-xs);
+  background: var(--color-dark);
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code {
+  color: var(--color-light);
+}
+
+summary {
+  display: flex;
+  align-items: baseline;
+  line-height: 1.2;
+  gap: 0 1ch;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary:hover,
+summary:focus-visible {
+  color: var(--color-primary-shade);
+}
+
+summary::before {
+  content: '+';
+  display: block;
+  color: var(--color-primary);
+  line-height: 0.5;
+  margin-inline-start: -2ch;
+  transform: scale(1.4);
+  transform-origin: right bottom;
+}
+
+[open] summary::before {
+  content: '—';
+}
+
+summary::-webkit-details-marker,
+summary::marker {
+  content: '';
+  display: none;
+}
+
+/* form elements */
+label::after {
+  content: '\A';
+  white-space: pre;
+}
+
+:is(input:not([type='checkbox']):not([type='radio']), textarea) {
+  padding: 0.3em;
+  background: transparent;
+  font: inherit;
+  border: 1px solid var(--color-mid);
+  width: 100%;
+}
+
+textarea {
+  display: block;
+}
+
+textarea:not([rows]) {
+  min-height: 20rem;
+}
+
+button {
+  display: inline-block;
+  font: inherit;
+  padding: 0.3em 1em;
+  border: 1px solid var(--color-mid);
+  background: var(--color-primary-glare);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-mid-glare);
+}
+
+last-fm p {
+  max-width: 30ch;
+}
+
+::selection {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+@media screen(md) {
+  h1::before {
+    content: '#';
+    margin-inline-start: -2ch;
+  }
+
+  h2::before {
+    content: '##';
+    margin-inline-start: -3ch;
+  }
+
+  h3::before {
+    content: '###';
+    margin-inline-start: -4ch;
+  }
+}

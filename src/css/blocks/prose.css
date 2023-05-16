@@ -1,0 +1,81 @@
+.prose {
+  --flow-space: var(--space-m-l);
+
+  max-width: 50rem;
+  line-height: 1.8;
+}
+
+.prose > img,
+.prose > table {
+  width: 100%;
+}
+
+.prose figure img {
+  border: 1px dashed var(--color-mid);
+  margin-inline: auto;
+}
+
+.prose ul li::marker {
+  content: '- ';
+  color: var(--color-mid);
+  font-weight: bold;
+}
+
+.prose :is(ol, ul) {
+  padding-inline-start: 1.85em;
+}
+
+.prose ol li::marker {
+  color: var(--color-mid);
+}
+
+.prose li + li {
+  margin-top: var(--space-s);
+}
+
+/* More space after and around certain elements */
+.prose :is(pre, pre + *, figure, figure + *, h2, h3, h4) {
+  --flow-space: var(--space-l-xl);
+}
+
+/* Less space for items that follow headings */
+.prose h1 + * {
+  --flow-space: 0.5em;
+}
+
+.prose :is(h2 + *, h3 + *, h4 + *) {
+  --flow-space: var(--space-s);
+}
+
+/* 16:9 aspect ratio on elements that aren't codepen embeds because we can set their height in the CMS */
+.prose iframe:not([id*='cp_embed']) {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: unset;
+}
+
+/* Break out embeds and code */
+.prose :is(.wp-block-cp-codepen-gutenberg-embed-block, pre, .wp-block-image) {
+  width: 100vw;
+  max-width: 60rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen(ltmd) {
+  /* break long words */
+  .prose > *,
+  .prose a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    hyphens: auto;
+  }
+}
+
+@media screen(md) {
+  .prose :is(ul, ol) {
+    padding-inline-start: 0.15ch;
+  }
+}

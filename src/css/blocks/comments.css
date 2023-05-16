@@ -1,0 +1,79 @@
+.comments,
+/* Extra specificity for the prose rule */
+.comments__list[role="list"] {
+  --flow-space: var(--space-l-xl);
+}
+
+/* remove inherited padding from lists in comments context */
+.comments [role='list'] {
+  padding: 0;
+}
+
+.comments__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-m);
+}
+
+.comments__item img {
+  aspect-ratio: 1;
+  object-size: cover;
+  width: 50px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.comments h2 + h3 {
+  --flow-space: var(--space-xl);
+}
+
+/* Extra specifity for the prose list styles */
+.comments__list[role='list'] li + li {
+  margin-top: var(--space-l);
+}
+
+.comments label {
+  font-weight: 700;
+}
+
+.comments__likes {
+  --gutter: var(--space-2xs);
+}
+
+.prose .comments__likes li::marker {
+  content: '';
+}
+
+.prose .comments__likes li + li {
+  margin: 0;
+}
+
+.comments__likes img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 35px;
+  background: var(--color-mid-glare);
+}
+
+.comments__list .comments__list {
+  margin: var(--space-l) 0 0 var(--space-m-l);
+}
+
+.comments .sidebar {
+  --sidebar-target-width: max-content;
+  --gutter: var(--space-xs);
+}
+
+.comments .sidebar .comments__likes {
+  margin: 0;
+}
+
+.comments .sidebar h3 {
+  transform: translateY(0.5ex);
+  font-weight: 400;
+}
+
+.comments .sidebar h3:before {
+  display: none;
+}

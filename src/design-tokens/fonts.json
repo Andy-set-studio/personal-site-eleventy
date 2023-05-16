@@ -1,0 +1,11 @@
+{
+  "title": "Fonts",
+  "description": "Each array of fonts creates a priority-based order. The first font in the array should be the ideal font, followed by sensible, web-safe fallbacks",
+  "items": [
+    {
+      "name": "Base",
+      "description": "Mono Fonts",
+      "value": ["'iA Writer Mono S'", "'Courier New'", "monospace"]
+    }
+  ]
+}
