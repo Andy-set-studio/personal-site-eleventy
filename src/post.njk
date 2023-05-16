@@ -14,6 +14,8 @@ permalink: '/{{ item.slug }}/index.html'
   <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time> 
 
   {{ item.content.rendered | safe }}
+
+  <hr />
   <div class="bg-primary-glare p-m flow">
     <p>👋 Hello, I’m <a href="/about">Andy</a> and I’ll help you build fast & visually stunning websites.</p>
     <p>I’m the founder of <a href="https://set.studio/?utm_campaign=Personal+Site+Call+To+Action&utm_source=Andy%E2%80%99s+Site&utm_medium=cta&utm_content=<?= basename(get_permalink()); ?>">Set Studio</a>, a creative agency that specialises in building stunning websites that work for <strong>everyone</strong>. If you’ve got a project in mind, <a href="mailto:andy@set.studio">get in touch</a>.</p>
