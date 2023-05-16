@@ -1,8 +1,13 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <article class="[ post ] [ flow wrapper ]">
-    <h1>{{ title }}</h1>
+  <article class="wrapper region prose flow">
+    {% if pageType === 'home' %}
+      <h1>{{ title }}<a href="https://andy-bell.co.uk/why-pay-8-for-a-check-mark-when-you-can-get-one-for-for-free/"><check-mark></check-mark></a></h1>   
+    {% else %}
+      <h1><?php the_title(); ?></h1> 
+    {% endif %} 
+
     {{ content | safe }}
   </article>
 {% endblock %}

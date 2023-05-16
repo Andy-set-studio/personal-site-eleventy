@@ -7,6 +7,18 @@
     {
       "text": "About",
       "url": "/about/"
+    },
+    {
+      "text": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "text": "Music Collection",
+      "url": "/music-collection/"
+    },
+    {
+      "text": "Links",
+      "url": "/links/"
     }
   ]
 }
