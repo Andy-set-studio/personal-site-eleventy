@@ -25,6 +25,7 @@ module.exports = config => {
   // Pass through fonts and images
   config.addPassthroughCopy('./src/fonts');
   config.addPassthroughCopy('./src/images');
+  config.addPassthroughCopy('./src/js');
 
   return {
     markdownTemplateEngine: 'njk',

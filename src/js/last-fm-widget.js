@@ -1,4 +1,4 @@
-class LastFM extends HTMLElement {
+class LastFMWidget extends HTMLElement {
   constructor() {
     super();
 
@@ -7,7 +7,7 @@ class LastFM extends HTMLElement {
 
   async load() {
     try {
-      const res = await fetch('/wp-json/lastfm/v1/lastest-track');
+      const res = await fetch('https://andy-bell.co.uk/wp-json/lastfm/v1/lastest-track');
       const data = await res.json();
 
       if (data.recenttracks) {
@@ -30,4 +30,4 @@ class LastFM extends HTMLElement {
   }
 }
 
-customElements.define('last-fm', LastFM);
+customElements.define('last-fm-widget', LastFMWidget);
