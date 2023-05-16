@@ -4,11 +4,11 @@
   </h2>
 {% endif %}
 <div>
-  <ol class="[ post-list ] [ flow ]">
-    {% for item in postListItems %}
-      <li class="post-list__item">
-        <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+  <ul class="flow" role="list">
+    {% for post in postListItems %}
+      <li>
+        <a href="/{{ post.slug }}">{{ post.title.rendered | safe }}</a>
       </li>
     {% endfor %}
-  </ol>
+  </ul>
 </div>

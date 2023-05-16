@@ -9,8 +9,8 @@
 {% endif %}
 
 {% block content %}
-  <article>
-    <h2>{{ title }}</h2>
+  <article class="wrapper region prose flow">
+    <h1>{{ title }}</h1>
     {% include "partials/post-list.njk" %}
 
     {# If we leave pagination in for tags, the next and prev links will
