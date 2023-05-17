@@ -6,7 +6,7 @@ const {AssetCache} = require('@11ty/eleventy-fetch');
 module.exports = async function () {
   const url = `${process.env.WP_API_POSTS}?per_page=100`;
 
-  let asset = new AssetCache('posts');
+  const asset = new AssetCache('posts');
 
   // If saved in cache, return that instead of fetching all the data
   if (asset.isCacheValid('8h')) {
