@@ -49,6 +49,10 @@ module.exports = async function () {
       new RegExp(process.env.MEDIA_URL_CMS, 'g'),
       process.env.MEDIA_URL_CDN
     );
+    item.content.rendered = item.content.rendered.replace(
+      new RegExp(process.env.MEDIA_URL_CMS_LEGACY, 'g'),
+      process.env.MEDIA_URL_CDN
+    );
   });
 
   // Stick in cache for later
