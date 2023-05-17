@@ -14,3 +14,6 @@ Thumbs.db
 node_modules
 dist
 src/_includes/css
+
+# Local Netlify folder
+.netlify

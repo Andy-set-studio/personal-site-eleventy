@@ -7,6 +7,7 @@ pagination:
 permalink: '/{{ item.slug }}/index.html'
 ---
 {% extends "layouts/base.njk" %}
+{% set title = item.title.rendered %}
 
 {% block content %}
 <article class="region prose flow wrapper">
