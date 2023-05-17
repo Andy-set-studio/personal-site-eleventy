@@ -46,8 +46,8 @@ module.exports = async function () {
   // Replace images from WordPress with imgix
   items.forEach(item => {
     item.content.rendered = item.content.rendered.replace(
-      /https:\/\/andy-bell.co.uk\/wp-content\/uploads\//g,
-      'https://andy-bell.imgix.net/'
+      new RegExp(process.env.MEDIA_URL_CMS, 'g'),
+      process.env.MEDIA_URL_CDN
     );
   });
 
