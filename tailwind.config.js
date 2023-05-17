@@ -101,7 +101,8 @@ module.exports = {
     plugin(function ({addUtilities, config}) {
       const currentConfig = config();
       const customUtilities = [
-        {key: 'spacing', prefix: 'flow-space', property: '--flow-space'}
+        {key: 'spacing', prefix: 'flow-space', property: '--flow-space'},
+        {key: 'spacing', prefix: 'gutter', property: '--gutter'}
       ];
 
       customUtilities.forEach(({key, prefix, property}) => {

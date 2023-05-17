@@ -1,0 +1,16 @@
+{% if socialFeed | length %}
+  <p>Everything from today.</p>
+  {% for item in socialFeed %}
+    <article class="{% if not loop.first %}flow-space-xl-2xl{% endif %}">
+      <blockquote>
+        {{ item.content | safe }}
+      </blockquote>
+      <p class="cluster text-step-0 gutter-xs mt-xs">
+        <a href="{{ item.link}}">{{ item.network }}</a> - <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter(true) }}</time>
+      </p>
+    </article>
+    
+  {% endfor %}
+{% else %}
+  <p>Something went wrong with the feeds…Try again later</p>
+{% endif %}
