@@ -1,5 +1,6 @@
 ---
 title: 'Hello, I’m Andy'
+metaTitle: 'Andy Bell - Designer, front-end developer and founder of Set Studio'
 metaDesc: 'I’m a designer, front-end developer and the founder of Set Studio.'
 layout: 'layouts/page.njk'
 pageType: 'home'
