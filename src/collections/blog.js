@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const axios = require('axios');
 const {AssetCache} = require('@11ty/eleventy-fetch');
+const site = require('../_data/site.json');
 
 module.exports = async function () {
   const url = `${process.env.WP_API_POSTS}?per_page=100`;
@@ -43,8 +44,8 @@ module.exports = async function () {
     continue;
   }
 
-  // Replace images from WordPress with imgix
   items.forEach(item => {
+    // Replace images from WordPress with imgix
     item.content.rendered = item.content.rendered.replace(
       new RegExp(process.env.MEDIA_URL_CMS, 'g'),
       process.env.MEDIA_URL_CDN
@@ -52,6 +53,12 @@ module.exports = async function () {
     item.content.rendered = item.content.rendered.replace(
       new RegExp(process.env.MEDIA_URL_CMS_LEGACY, 'g'),
       process.env.MEDIA_URL_CDN
+    );
+
+    // Replace API url with live site url
+    item.content.rendered = item.content.rendered.replace(
+      new RegExp(process.env.WP_API, 'g'),
+      site.url
     );
   });
 
