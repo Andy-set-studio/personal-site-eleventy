@@ -6,6 +6,9 @@
     <a href="{{ pagination.href.previous }}{{ paginationAnchor }}">
       <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
     </a>
+  {% else %}
+    {# render a no break space so repel can do its thing #}
+    &nbsp; 
   {% endif %}
   {% if pagination.href.next %}
     <a href="{{ pagination.href.next }}{{ paginationAnchor }}">
