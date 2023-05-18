@@ -1,4 +1,6 @@
-module.exports = (items, limit = 999) => {
+module.exports = (passedItems, limit = 999) => {
+  // Clone array so it doesn't mutate
+  const items = [...passedItems];
   let currentIndex = items.length;
   let randomIndex;
 
