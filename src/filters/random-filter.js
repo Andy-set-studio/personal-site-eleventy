@@ -1,4 +1,4 @@
-module.exports = (items, limit = 5) => {
+module.exports = (items, limit = 999) => {
   let currentIndex = items.length;
   let randomIndex;
 

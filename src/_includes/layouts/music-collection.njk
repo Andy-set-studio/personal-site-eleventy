@@ -1,0 +1,55 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<div class="music-collection mt-s-m">
+  {% if not item %}
+  <h1 class="visually-hidden">{{ title }}</h1>
+  {% endif %}
+  <div class="sidebar">
+    <div>
+      <ul role="list" class="text-base flow">
+        {% for item in musicNavigation.items %}
+        <li>
+          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+            >{{ item.text }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      {% if item %}
+      <div class="sidebar">
+        <div>
+          <img src="{{ item.cover }}" alt="{{ item.name }} cover" /> 
+        </div>
+        <div class="flow">
+          <h1>{{ item.name }}</h1>
+          <div class="flow flow-space-100">
+            <p><strong>Artist</strong>: {{ item.artist }}</p>
+            <p><strong>Formats</strong>: {{ item.formats | join(',') }}</p>
+            <p>
+              <a href="https://openscrobbler.com/scrobble/album/view/{{ item.artist | urlEncodeFilter }}/{{ item.name | urlEncodeFilter }}">Scrobble</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2>Random 5 items from the collection</h2>
+      {% endif %}
+      <ul class="grid  {{ 'wrapper mx-[0]' if item else '' }}" role="list">
+      {% for item in items %}
+        <li>
+          <a href="/music-collection/{{ item.name | sanitizeNameFilter | slug }}/" class="flow flow-space-2xs">
+            <img src="{{ item.cover }}" alt="Cover for {{ item.name }}" loading="lazy" />
+            <p><strong>{{ item.name }}</strong></p>
+            <p class="text-step-0">{{ item.artist }}</p>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
