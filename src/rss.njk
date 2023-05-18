@@ -18,7 +18,7 @@ permalink: '/feed.xml'
     {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
     <entry>
       <title>{{ post.title.rendered | safe }}</title>
-      <link href="{{ absolutePostUrl }}"/>
+      <link href="{{ site.url }}/{{ post.slug }}"/>
       <updated>{{ post.date }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <content type="html"><![CDATA[
