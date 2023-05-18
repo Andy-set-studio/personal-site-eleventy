@@ -48,7 +48,7 @@ module.exports = async function () {
 
   if (items.length) {
     items = items
-      .sort((a, b) => b.date.valueOf() - a.valueOf())
+      .sort((a, b) => b.date.valueOf() - a.date.valueOf())
       .filter(item => moment(item.date).isSame(moment(), 'day'));
   }
 
