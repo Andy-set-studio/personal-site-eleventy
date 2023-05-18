@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="music-collection mt-s-m">
+<div class="music-collection my-s-m wrapper">
   {% if not item %}
   <h1 class="visually-hidden">{{ title }}</h1>
   {% endif %}
@@ -36,9 +36,9 @@
         </div>
       </div>
       <hr />
-      <h2>Random 5 items from the collection</h2>
+      <h2>Random items from the collection</h2>
       {% endif %}
-      <ul class="grid  {{ 'wrapper mx-[0]' if item else '' }}" role="list">
+      <ul class="grid" role="list">
       {% for item in items %}
         <li>
           <a href="/music-collection/{{ item.name | sanitizeNameFilter | slug }}/" class="flow flow-space-2xs">

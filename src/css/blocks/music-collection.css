@@ -1,5 +1,5 @@
 .music-collection {
-  --sidebar-target-width: 14rem;
+  --sidebar-target-width: 14.5rem;
 
   padding-inline: var(--gutter);
   line-height: 1.1;
