@@ -2,27 +2,27 @@
   "items": [
     {
       "text": "All",
-      "url": "/music-collection"
+      "url": "/music-collection/"
     },
     {
       "text": "Vinyl",
-      "url": "/music-collection/vinyl"
+      "url": "/music-collection/vinyl/"
     },
     {
       "text": "CD",
-      "url": "/music-collection/cd"
+      "url": "/music-collection/cd/"
     },
     {
       "text": "Digital",
-      "url": "/music-collection/digital"
+      "url": "/music-collection/digital/"
     },
     {
       "text": "All time top 10",
-      "url": "/music-collection/top-10"
+      "url": "/music-collection/top-10/"
     },
     {
       "text": "Shuffled",
-      "url": "/music-collection/shuffled"
+      "url": "/music-collection/shuffled/"
     }
   ]
 }
