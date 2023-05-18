@@ -15,10 +15,10 @@ permalink: '/feed.xml'
     <email>{{ site.authorEmail }}</email>
 	</author>
 	{% for post in collections.blog.slice(0, 3) %}
-    {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
+    {% set absolutePostUrl %}{{ site.url }}/{{ post.slug }}{% endset %}
     <entry>
       <title>{{ post.title.rendered | safe }}</title>
-      <link href="{{ site.url }}/{{ post.slug }}"/>
+      <link href="{{ absolutePostUrl }}"/>
       <updated>{{ post.date }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <content type="html"><![CDATA[
