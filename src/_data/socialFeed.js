@@ -1,5 +1,4 @@
 const axios = require('axios');
-const {AssetCache} = require('@11ty/eleventy-fetch');
 const xml2js = require('xml2js');
 const moment = require('moment');
 
@@ -23,8 +22,8 @@ module.exports = async function () {
         items.push({
           network: 'Bluesky',
           content: `<p>${item.description[0]}</p>`,
-          date: new Date(item.pubDate[0].replace(' GMT', '')),
-          link: item.link[0].replace('staging.bsky', 'psky')
+          date: moment(item.pubDate[0]).utc(),
+          link: item.link[0].replace('staging.bsky', 'bsky')
         });
       });
     }
@@ -37,7 +36,7 @@ module.exports = async function () {
         items.push({
           network: 'Mastodon',
           content: item.description[0],
-          date: new Date(item.pubDate[0]),
+          date: moment(item.pubDate[0]).utc(),
           link: item.link[0]
         });
       });
@@ -48,10 +47,9 @@ module.exports = async function () {
   }
 
   if (items.length) {
-    items = items.filter(item => moment(item.date).isSame(new Date(), 'day'));
-    items = items.sort((a, b) => {
-      a.date.getTime() - b.date.getTime();
-    });
+    items = items
+      .sort((a, b) => b.date.valueOf() - a.valueOf())
+      .filter(item => moment(item.date).isSame(moment(), 'day'));
   }
 
   return items;

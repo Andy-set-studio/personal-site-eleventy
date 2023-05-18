@@ -8,8 +8,7 @@
       <p class="cluster text-step-0 gutter-xs mt-xs">
         <a href="{{ item.link}}">{{ item.network }}</a> - <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter(true) }}</time>
       </p>
-    </article>
-    
+    </article> 
   {% endfor %}
 {% else %}
   <p>Something went wrong with the feeds…Try again later</p>
