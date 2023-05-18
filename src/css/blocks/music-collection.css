@@ -5,6 +5,15 @@
   line-height: 1.1;
 }
 
+.music-collection > .sidebar {
+  align-items: flex-start;
+}
+
+.music-collection > .sidebar :first-child {
+  position: sticky;
+  top: var(--gutter);
+}
+
 .music-collection h1::before {
   display: none;
 }
