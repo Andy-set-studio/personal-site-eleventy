@@ -1,0 +1,44 @@
+.music-collection {
+  --sidebar-target-width: 14rem;
+
+  padding-inline: var(--gutter);
+  line-height: 1.1;
+}
+
+.music-collection h1::before {
+  display: none;
+}
+
+.music-collection .grid {
+  --grid-min-item-size: 12rem;
+  --gutter: var(--space-l-xl) var(--gutter);
+}
+
+.music-collection .grid :is(ul, ol)[role='list'] {
+  padding: 0;
+}
+
+.music-collection .grid :is(ul, ol) li + li {
+  margin-top: 0;
+}
+
+/* Added role to get an extra specificity point */
+.music-collection .grid ul li::marker {
+  content: none;
+}
+
+.music-collection .grid a {
+  text-decoration: none;
+  opacity: 0.8;
+  filter: saturate(0.3);
+}
+
+.music-collection .grid a:hover {
+  opacity: 1;
+  filter: saturate(1);
+  transition: all var(--transition-fade);
+}
+
+.music-collection img {
+  border: 1px solid var(--color-mid-glare);
+}

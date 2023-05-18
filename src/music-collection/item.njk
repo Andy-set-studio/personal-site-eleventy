@@ -1,0 +1,29 @@
+---
+title: 'Item'
+pagination:
+  data: collections.music 
+  size: 1
+  alias: item
+permalink: '/music-collection/{{ item.name | sanitizeNameFilter | slug }}/'
+---
+
+{% extends "layouts/base.njk" %}
+{% set title = item.name %}
+
+{% block content %}
+<article class="region prose flow wrapper">
+  <div>   
+    <img src="{{ item.cover }}" alt="" /> 
+  </div>
+  <div class="flow">     
+    <h2><a href="/item/{{ item.name | slug }}">{{ item.name }}</a></h2>
+    <div class="flow flow-space-100">
+      <p>{{ item.artist }}</p>
+      <p>{{ item.formats | join(',') }}</p>
+      <p>
+        <a href="https://openscrobbler.com/scrobble/album/view/{{ item.artist | urlEncodeFilter }}/{{ item.name | urlEncodeFilter }}">Scrobble</a>
+      </p>
+    </div>
+  </div>
+</article>
+{% endblock %}

@@ -1,0 +1,42 @@
+---
+title: 'Music Collection'
+permalink: '/music-collection/index.html'
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+
+<div class="music-collection mt-l-xl">
+  <h1 class="visually-hidden">{{ title }}</h1>
+  <div class="sidebar">
+    <div>
+      <ul role="list" class="text-base flow">
+        {% for item in musicNavigation.items %}
+        <li>
+          <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+            >{{ item.text }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      
+      <div class="flow-space-l-xl">
+        <ul class="grid" role="list">
+        {% for item in collections.music %}
+          <li>
+            <a href="/music-collection/{{ item.name | sanitizeNameFilter | slug }}/" class="flow flow-space-2xs">
+              <img src="{{ item.cover }}" alt="Cover for {{ item.name }}" loading="lazy" />
+              <p><strong>{{ item.name }}</strong></p>
+              <p class="text-step-0">{{ item.artist }}</p>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
