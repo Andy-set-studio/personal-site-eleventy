@@ -9,11 +9,6 @@
   align-items: flex-start;
 }
 
-.music-collection__docked {
-  position: sticky;
-  top: var(--gutter);
-}
-
 .music-collection h1::before {
   display: none;
 }
@@ -50,4 +45,11 @@
 
 .music-collection img {
   border: 1px solid var(--color-mid-glare);
+}
+
+@media screen(lg) {
+  .music-collection__docked {
+    position: sticky;
+    top: var(--gutter);
+  }
 }
