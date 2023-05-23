@@ -45,6 +45,8 @@
 
 .music-collection img {
   border: 1px solid var(--color-mid-glare);
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 @media screen(lg) {
