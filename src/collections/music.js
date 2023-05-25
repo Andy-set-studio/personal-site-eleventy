@@ -5,7 +5,7 @@ const apiKey = process.env.NOTION_TOKEN;
 // This is the first part of the URL: https://www.notion.so/75aacb32823a4295a345213c63555d6a?v=3be29744fa6f45c493a4b9774119a447
 // You also need to share it with the integration: on the database page, click share and the integration will show up like users do
 
-// https://www.notion.so/my-integrations/internal/6624fb8c938d48d38532dbde4402cceb
+// https://www.notion.so/my-integrations/internal/
 const databaseID = process.env.NOTION_DB_ID;
 
 const {Client} = require('@notionhq/client');
