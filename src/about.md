@@ -8,7 +8,7 @@ Over these years, I have worked on both extremely large projects for huge organi
 
 I mostly specialise in CSS—whether that is writing a [course for Google](https://web.dev/learn/css/), co-authoring a [book on CSS layout](https://every-layout.dev/), or creating a [methodology to help people write better CSS](https://cube.fyi/). A big chunk of [our](https://set.studio) client work involves us applying this experience to help teams write better CSS—often by helping them create a design system.
 
-You can catch up with me on [Mastodon](https://bell.bz/@andy), [Twitter](https://twitter.com/piccalilli_), [CodePen](https://codepen.io/andy-set-studio) or [Github](https://github.com/Andy-set-studio). There’s [some other links here](https://andy-bell.co.uk/links/), too.
+You can catch up with me on {% for item in socialNetworks %}[{{ item.text | safe }}]({{ item.url }}), {% endfor %}[CodePen](https://codepen.io/andy-set-studio) or [Github](https://github.com/Andy-set-studio). There’s [some other links here](https://andy-bell.co.uk/links/), too.
 
 ## Enquiries
 
