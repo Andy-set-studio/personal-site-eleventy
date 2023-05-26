@@ -9,6 +9,7 @@ const apiKey = process.env.NOTION_TOKEN;
 const databaseID = process.env.NOTION_DB_ID;
 
 const {Client} = require('@notionhq/client');
+const {default: axios} = require('axios');
 
 // Initializing a client
 const notion = new Client({
@@ -35,6 +36,8 @@ const getDB = async function (cursor = null) {
 };
 
 module.exports = async function () {
+  const response = [];
+
   // A bit of low-level caching going on
   if (items.length) {
     return items;
@@ -58,20 +61,58 @@ module.exports = async function () {
     items = [...items, ...db.results];
   }
 
-  const response = items.map(result => {
+  // Loop each item in a for loop so we can use await
+  for (itemIndex = 0; itemIndex < items.length; itemIndex++) {
+    const result = items[itemIndex];
+    const name = result.properties.Name.title[0].plain_text;
+    const artist = result.properties.Artist.select.name;
+    let lastFMData = null;
     let coverImage = result.properties.Cover.rich_text[0].plain_text;
 
     coverImage = coverImage.replace('https://music.andy-bell.co.uk', '');
     coverImage = `https://music-catalogue-covers.imgix.net${coverImage}?auto=format&w=500&height=500`;
 
-    return {
-      name: result.properties.Name.title[0].plain_text,
-      artist: result.properties.Artist.select.name,
+    // Try to grab album info (including genres) from Last.FM
+    try {
+      const {data} = await axios.get(
+        `http://ws.audioscrobbler.com/2.0/?method=album.getinfo&user=andyvirus&artist=${artist
+          .trim()
+          .toLowerCase()
+          .replace(/ /g, '+')}&album=${name
+          .trim()
+          .toLowerCase()
+          .replace(/ /g, '+')}&api_key=${process.env.LAST_FM_KEY}&format=json`
+      );
+      lastFMData = data;
+    } catch (ex) {}
+
+    response.push({
+      name,
+      artist,
       cover: coverImage,
       formats: result.properties.Formats.multi_select.map(item => item.name),
-      tags: result.properties.Tags.multi_select.map(item => item.name)
-    };
-  });
+      tags: result.properties.Tags.multi_select.map(item => item.name),
+
+      // Process last fm tags
+      lastFMTags:
+        lastFMData?.album?.tags?.tag && Array.isArray(lastFMData?.album?.tags?.tag)
+          ? lastFMData.album.tags.tag
+          : null,
+
+      // Process track listing
+      tracks:
+        lastFMData?.album?.tracks?.track &&
+        Array.isArray(lastFMData?.album?.tracks?.track)
+          ? lastFMData.album.tracks.track.map(item => ({
+              name: item.name,
+              time: item.duration
+            }))
+          : null,
+
+      // Get a scrobble count
+      scrobbles: lastFMData?.album?.userplaycount ? lastFMData.album.userplaycount : null
+    });
+  }
 
   // Stick in cache for later
   asset.save(response, 'json');

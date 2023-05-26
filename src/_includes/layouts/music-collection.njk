@@ -25,12 +25,48 @@
         </div>
         <div class="flow">
           <h1>{{ item.name }}</h1>
-          <div class="flow flow-space-100">
-            <p><strong>Artist</strong>: {{ item.artist }}</p>
-            <p><strong>Formats</strong>: {{ item.formats | join(',') }}</p>
+          <div class="flow flow-space-m-l">
+            <dl>
+              <dt>Artist</dt>
+              <dd>{{ item.artist }}</dd>
+              <dt>Formats</dt>
+              <dd>
+                <ul role="list" class="cluster m-[0] gutter-xs">
+                {% for format in item.formats %}
+                  <li>
+                    <a href="/music-collection/{{ format | slug }}">{{ format }}</a>
+                  </li>
+                {% endfor %}
+                </ul>
+              </dd>
+              {% if item.lastFMTags %}
+                <dt>Top Last.FM tags</dt>
+                <dd>
+                    <ul role="list" class="cluster m-[0] gutter-xs">
+                      {% for tag in item.lastFMTags %}
+                        <li>
+                          <a href="{{ tag.url }}">{{ tag.name }}</a> 
+                        </li>
+                      {% endfor %}
+                    </ul>
+                </dd>
+              {% endif %}
+            </dl>
             <p>
-              <a href="https://openscrobbler.com/scrobble/album/view/{{ item.artist | urlEncodeFilter }}/{{ item.name | urlEncodeFilter }}">Scrobble</a>
+              <a href="https://openscrobbler.com/scrobble/album/view/{{ item.artist | urlEncodeFilter }}/{{ item.name | urlEncodeFilter }}">Scrobble this album</a>
             </p>
+            {% if item.tracks %}
+            <div class="prose flow">
+              <h2>Tracks</h2>
+              <ol>
+                {% for track in item.tracks %}
+                <li>
+                  {{ track.name }}
+                </li>
+                {% endfor %}
+              </ol>
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>

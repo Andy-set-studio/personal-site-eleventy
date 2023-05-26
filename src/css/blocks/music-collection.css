@@ -9,7 +9,7 @@
   align-items: flex-start;
 }
 
-.music-collection h1::before {
+.music-collection :is(h1, h2)::before {
   display: none;
 }
 

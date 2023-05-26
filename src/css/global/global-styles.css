@@ -157,6 +157,16 @@ pre code {
   color: var(--color-light);
 }
 
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-m) var(--space-xs);
+}
+
+dt {
+  font-weight: 700;
+}
+
 summary {
   display: flex;
   align-items: baseline;
