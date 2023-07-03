@@ -18,6 +18,8 @@
   {% set metaDesc = summary %}
 {% endif %}
 
+{# Clean up page title #}
+{% set pageTitle = pageTitle | safe %}
 
 <title>{{ pageTitle }}</title>
 <link rel="canonical" href="{{ currentUrl }}" />
