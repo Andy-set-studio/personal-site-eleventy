@@ -60,6 +60,11 @@ module.exports = async function () {
       new RegExp(process.env.WP_API, 'g'),
       site.url
     );
+
+    item.jetpack_featured_media_url = item.jetpack_featured_media_url.replace(
+      new RegExp(process.env.MEDIA_URL_CMS, 'g'),
+      process.env.MEDIA_URL_CDN
+    );
   });
 
   // Stick in cache for later
