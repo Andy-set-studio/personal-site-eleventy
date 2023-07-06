@@ -1,5 +1,5 @@
 ---
-title: 'Links ’n’ stuff'
+title: 'Links to all my places'
 layout: 'layouts/page.njk'
 ---
 Places you can find me on the world wide web.
