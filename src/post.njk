@@ -9,6 +9,12 @@ permalink: '/{{ item.slug }}/index.html'
 {% extends "layouts/base.njk" %}
 {% set title = item.title.rendered %}
 
+{% if item.jetpack_featured_media_url | length > 0 %}
+  {% set socialImage = item.jetpack_featured_media_url %}
+{% endif %}
+
+{% set metaDesc = item.excerpt.rendered | striptags %}
+
 {% block content %}
 <article class="region prose flow wrapper">
   <h1>{{ item.title.rendered | safe }}</h1>   
