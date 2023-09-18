@@ -246,6 +246,11 @@ last-fm p {
   color: var(--color-light);
 }
 
+pre code ::selection {
+  background: var(--color-primary) !important;
+  color: var(--color-dark) !important;
+}
+
 @media screen(md) {
   h1::before {
     content: '#';
