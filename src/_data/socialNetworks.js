@@ -1,15 +1,15 @@
 module.exports = [
   {
-    text: 'Bluesky (<code>@bell.bz</code>)',
-    url: 'https://bsky.app/profile/bell.bz'
-  },
-  {
     text: 'Mastodon',
-    url: 'https://bell.bz/@andy'
+    url: 'https://mastodon.social/@belldotbz'
   },
   {
     text: 'Threads',
     url: 'https://www.threads.net/@belldotbz'
+  },
+  {
+    text: 'Bluesky (<code>@bell.bz</code>)',
+    url: 'https://bsky.app/profile/bell.bz'
   },
   {
     text: 'Twitter',
