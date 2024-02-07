@@ -8,6 +8,6 @@ You can find me on:
 - [{{ item.text | safe }}]({{ item.url }})
 {% endfor %}
 
-## Skeets and toots 
+## Posts from socials 
 
 {% include "partials/skeets-and-toots.njk" %}
