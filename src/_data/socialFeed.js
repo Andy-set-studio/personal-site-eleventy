@@ -3,8 +3,8 @@ const xml2js = require('xml2js');
 const moment = require('moment');
 
 module.exports = async function () {
-  const bskyURL = 'https://rss.firesky.tv/?filter=@andy-bell.co.uk';
-  const mastoURL = 'https://bell.bz/@andy.rss';
+  const bskyURL = 'https://rss.firesky.tv/?filter=@bell.bz';
+  const mastoURL = 'https://mastodon.social/@belldotbz.rss';
   let items = [];
 
   try {
