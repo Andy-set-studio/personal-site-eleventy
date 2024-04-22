@@ -7,7 +7,7 @@ pageType: 'home'
 postListHeadline: 'Latest from the blog'
 ---
 
-I’m a designer, front-end developer and the founder of [Set Studio](https://set.studio/).
+I’m a designer, front-end developer and the founder of [Set Studio](https://set.studio/) and [Piccalilli](https://piccalil.li/).
 
 I focus on making stunning [websites that work for everyone](https://buildexcellentwebsit.es/), regardless of their device or connection speed.
 
