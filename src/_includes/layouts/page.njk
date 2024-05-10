@@ -2,11 +2,7 @@
 
 {% block content %}
   <article class="wrapper region prose flow">
-    {% if pageType === 'home' %}
-      <h1>{{ title }}<a href="https://andy-bell.co.uk/why-pay-8-for-a-check-mark-when-you-can-get-one-for-for-free/"><check-mark></check-mark></a></h1>   
-    {% else %}
-      <h1>{{ title }}</h1> 
-    {% endif %} 
+    <h1>{{ title }}</h1> 
 
     {{ content | safe }}
   </article>
