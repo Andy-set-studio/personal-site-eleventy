@@ -17,6 +17,7 @@ Places you can find me on the world wide web.
 ## Websites
 
 - [Set Studio](https://set.studio) (my cool agency)
+- [Piccalilli](https://piccalil.li/) (my cool publication)
 - [Build Excellent Websites](https://buildexcellentwebsit.es/)
 - [Every Layout – Re-learn CSS layout](https://every-layout.dev/)
 - [Array – A wholesome, well-moderated, premium Discord community of freelancers](https://array.chat/)
