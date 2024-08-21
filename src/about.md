@@ -16,7 +16,7 @@ I run [Set Studio](https://set.studio), a creative agency that specialises in bu
 
 I’m also an international keynote speaker and have availability for talks in 2023 onwards. You can see a previous talk, [here](https://www.youtube.com/watch?v=5uhIiI9Ld5M).
 
-For all enquiries, please send me an email at `andy@set.studio` or drop a message on the [Set Studio contact form](https://6beiysbiubx.typeform.com/to/bplFaZeL?typeform-source=set.studio).
+For all enquiries, please send me an email at `andy@set.studio` or drop a message on the [Set Studio contact form](https://set.studio/contact).
 
 ## Profile Picture
 
