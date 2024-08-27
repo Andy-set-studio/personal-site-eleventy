@@ -1,18 +1,18 @@
 module.exports = [
   {
-    text: 'Mastodon',
-    url: 'https://mastodon.social/@belldotbz'
-  },
-  {
-    text: 'Threads',
-    url: 'https://www.threads.net/@belldotbz'
-  },
-  {
     text: 'Bluesky (<code>@bell.bz</code>)',
     url: 'https://bsky.app/profile/bell.bz'
   },
   {
-    text: 'Twitter',
+    text: 'Mastodon',
+    url: 'https://bell.bz/@andy'
+  },
+  {
+    text: 'Threads (<code>I very rarely post here</code>)',
+    url: 'https://www.threads.net/@belldotbz'
+  },
+  {
+    text: 'Twitter (<code>I don’t post here anymore</code>)',
     url: 'https://twitter.com/belldotbz'
   }
 ];
