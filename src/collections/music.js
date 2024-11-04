@@ -75,7 +75,7 @@ module.exports = async function () {
     // Try to grab album info (including genres) from Last.FM
     try {
       const {data} = await axios.get(
-        `http://ws.audioscrobbler.com/2.0/?method=album.getinfo&user=andyvirus&artist=${artist
+        `http://ws.audioscrobbler.com/2.0/?method=album.getinfo&user=belldotbz&artist=${artist
           .trim()
           .toLowerCase()
           .replace(/ /g, '+')}&album=${name
