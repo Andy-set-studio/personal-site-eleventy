@@ -13,7 +13,7 @@ module.exports = async function () {
 
   // Loads recently played tracks
   const {data: recentTracksData} = await axios.get(
-    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=andyvirus&api_key=${process.env.LAST_FM_KEY}&format=json`
+    `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=belldotbz&api_key=${process.env.LAST_FM_KEY}&format=json`
   );
 
   const response = {
