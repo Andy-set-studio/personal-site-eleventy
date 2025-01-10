@@ -3,6 +3,8 @@ title: 'Hello, I’m Andy and this is where you can find me and contact me'
 layout: 'layouts/page.njk'
 ---
 
+You can catch me via email at `andy@set.studio` or…
+
 ## Links
 
 - I’m the founder of a design agency called [Set Studio](https://set.studio)
