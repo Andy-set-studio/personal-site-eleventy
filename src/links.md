@@ -14,9 +14,7 @@ You can catch me via email at `andy@set.studio` or…
 
 ## Where you can find me online
 
-{% for item in socialNetworks %}
-- [{{ item.text | safe }}]({{ item.url }})
-{% endfor %}
+- [Bluesky (`@bell.bz`)](https://bsky.app/profile/bell.bz)
 - [Last.FM](https://www.last.fm/user/belldotbz)
 - [LinkedIn](https://www.linkedin.com/in/andy-bell-347971255/)
-- Discord: `andy.bell.bz#6969`
+- Discord: `andy.bell.bz#6969`
