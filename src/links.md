@@ -10,7 +10,7 @@ You can catch me via email at `andy@set.studio` or…
 - I’m the founder of a design agency called [Set Studio](https://set.studio)
 - I’m also the founder of a front-end and design publication called [Piccalilli](https://piccalil.li/)
 - I wrote a CSS course called [Complete CSS](https://complete-css.com)
-- I also co-wrotea CSS layout book called [Every Layout]
+- I also co-wrotea CSS layout book called [Every Layout](https://every-layout.dev/)
 
 ## Where you can find me online
 
