@@ -3,7 +3,7 @@ title: 'Hello, I’m Andy and this is where you can find me and contact me'
 layout: 'layouts/page.njk'
 ---
 
-You can catch me via email at `andy@set.studio` or…
+You can catch me via email at `andy@set.studio`, [book a 30 minute call with me](https://calendly.com/andy-set-studio/set-studio-enquiry) or…
 
 ## Links
 
