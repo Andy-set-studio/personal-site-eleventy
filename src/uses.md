@@ -9,12 +9,11 @@ _Here’s all the stuff I use day-to-day to do what I do and how I have it set u
 
 ## Computer and desk
 
-*   M2 MacBook Air (Hidden away under the desk)
+*   M2 MacBook Air (hidden away under the desk)
 *   Apple Studio Display
 *   Apple Trackpad
 *   Apple Magic Keyboard
 *   reMarkable Paper Pro
-
 *   Autonomous SmartDesk
 *   Autonomous ErgoChair
 
@@ -26,8 +25,10 @@ _Here’s all the stuff I use day-to-day to do what I do and how I have it set u
 ## Software
 
 *   iA Writer
+*   Arc Browser
+*   Polypane
 *   Zed editor
-*   Sublime merge 
+*   Sublime Merge 
 *   Notion
 *   Obsidian
 *   Mimestream
