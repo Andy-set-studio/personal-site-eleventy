@@ -18,3 +18,15 @@ You can catch me via email at `andy@set.studio`, [book a 30 minute call with me]
 - [LinkedIn](https://www.linkedin.com/in/andy-bell-347971255/)
 - Discord: `andy.bell.bz#6969`
 - [Last.FM](https://www.last.fm/user/belldotbz)
+
+## If you want to support my work 
+
+That's very appreciated, thank you 😊
+
+The most impactful thing you can do is grab a copy of Complete CSS. Take this coupon to save 15% `ANDYSENTME`. 
+
+[![Complete CSS - take your CSS skills beyond the next level](https://piccalil.li/images/complete-css-social-share.png)](https://piccalilli.link/personal-site-links-page)
+
+If you work for an organisation that advertises, [we offer advertising on Piccalilli too](https://piccalil.li/advertise/). The more Piccalilli grows into a sustainable, high quality publication, the more it helps me! It helps everyone in the community too, so you'll be doing a good thing. 
+
+The biggest thing you can do to help though is do the best *you* can do. If my stuff helps you do that, then we're both doing well 💛
