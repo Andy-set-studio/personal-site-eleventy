@@ -23,7 +23,7 @@ You can catch me via email at `andy@set.studio`, [book a 30 minute call with me]
 
 That's very appreciated, thank you 😊
 
-The most impactful thing you can do is grab a copy of Complete CSS. Take this coupon to save 15% `ANDYSENTME`. 
+The most impactful thing you can do is grab a copy of [Complete CSS](https://piccalilli.link/personal-site-links-page). Take this coupon to save 15% `ANDYSENTME`. 
 
 [![Complete CSS - take your CSS skills beyond the next level](https://piccalil.li/images/complete-css-social-share.png)](https://piccalilli.link/personal-site-links-page)
 
