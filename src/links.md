@@ -5,7 +5,7 @@ layout: 'layouts/page.njk'
 
 You can catch me via email at `andy@set.studio`, [book a 30 minute call with me](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ28tsG0YOm2Ov_wZ_HJUMWv8EJVOdlZYV05Z1-9SH2s8JEGXhhseC6dskMnDeEMoCC2pWVqp-76?gv=true) or…
 
-## Links
+## Work stuff
 
 - I’m the founder of a design agency called [Set Studio](https://set.studio)
 - I’m also the founder of a front-end and design publication called [Piccalilli](https://piccalil.li/)
