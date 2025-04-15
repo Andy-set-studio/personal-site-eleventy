@@ -12,9 +12,9 @@ You can [check out my articles on Piccalilli](https://piccalil.li/author/andy-be
 
 ## Enquiries
 
-I run [Set Studio](https://set.studio), a creative agency that specialises in building excellent websites for everyone. We currently have availability for projects starting in Q2 2023, onwards.
+I run [Set Studio](https://set.studio) — design partners for brands that adapt fast and thrive. I also run [Piccalilli](https://piccalil.li/), a front-end and design education publisher.
 
-I’m also an international keynote speaker and have availability for talks in 2023 onwards. You can see a previous talk, [here](https://www.youtube.com/watch?v=5uhIiI9Ld5M).
+I’m also an international keynote speaker. You can see a previous talk, [here](https://www.youtube.com/watch?v=5uhIiI9Ld5M). Drop me an email if you want me to speak at your event! 
 
 For all enquiries, please send me an email at `andy@set.studio` or drop a message on the [Set Studio contact form](https://set.studio/contact).
 
