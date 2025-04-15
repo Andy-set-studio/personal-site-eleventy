@@ -15,7 +15,7 @@
 {% endif %}
 
 {% if not metaDesc %}
-  {% set metaDesc = summary | replace(/&#8217;/g, '’') %}
+  {% set metaDesc = summary.replace(/&#8217;/g, '’') %}
 {% endif %}
 
 {# Clean up page title #}
