@@ -62,6 +62,14 @@
   transform: translateX(-50%);
 }
 
+.prose label {
+  font-weight: bold;
+}
+
+.prose label + input {
+  --flow-space: 0.3em;
+}
+
 @media screen(ltmd) {
   /* break long words */
   .prose > *,
