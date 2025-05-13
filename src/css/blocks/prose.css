@@ -70,6 +70,10 @@
   --flow-space: 0.3em;
 }
 
+.prose blockquote * + * {
+  margin-block-start: var(--flow-space);
+}
+
 @media screen(ltmd) {
   /* break long words */
   .prose > *,
