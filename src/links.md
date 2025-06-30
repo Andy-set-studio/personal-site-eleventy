@@ -1,5 +1,5 @@
 ---
-title: 'Hello, I’m Andy and this is where you can find me and contact me'
+title: 'Hello, I’m Andy and this is where you can find and contact me'
 layout: 'layouts/page.njk'
 ---
 
