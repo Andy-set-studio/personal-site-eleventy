@@ -85,6 +85,10 @@ figcaption {
   max-width: unset;
 }
 
+video {
+  width: 100%;
+}
+
 blockquote {
   font-style: italic;
   padding-inline-start: 1em;
