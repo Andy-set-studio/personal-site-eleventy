@@ -3,7 +3,7 @@ title: 'Hello, I’m Andy and this is where you can find and contact me'
 layout: 'layouts/page.njk'
 ---
 
-You can catch me via email at `andy@set.studio`, [book a 30 minute call with me](https://calendar.notion.so/meet/andybell/4t1is4lfn) or…
+You can catch me via email at `andy@set.studio` or…
 
 ## Work stuff
 
