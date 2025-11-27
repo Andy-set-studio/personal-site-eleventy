@@ -259,19 +259,3 @@ pre code ::selection {
   color: var(--color-dark) !important;
 }
 
-@media screen(md) {
-  h1::before {
-    content: '#';
-    margin-inline-start: -2ch;
-  }
-
-  h2::before {
-    content: '##';
-    margin-inline-start: -3ch;
-  }
-
-  h3::before {
-    content: '###';
-    margin-inline-start: -4ch;
-  }
-}
