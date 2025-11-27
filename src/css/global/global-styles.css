@@ -34,8 +34,6 @@ h3 {
 }
 
 :is(h1, h2, h3) {
-  display: flex;
-  gap: 1ch;
   font-weight: 700;
   line-height: 1.2;
 }
