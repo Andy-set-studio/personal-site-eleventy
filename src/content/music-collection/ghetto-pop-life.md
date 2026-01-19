@@ -1,0 +1,9 @@
+---
+title: 'Ghetto Pop Life'
+artist: 'DangerMouse & Jemini'
+cover: '1768826604330-310.jpeg'
+formats: ['Vinyl']
+tags: ['Masterpiece']
+pubDate: 2022-03-02T22:08:00.000Z']
+---
+
