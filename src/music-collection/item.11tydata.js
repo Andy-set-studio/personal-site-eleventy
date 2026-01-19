@@ -5,6 +5,7 @@ module.exports = {
     items: data => {
       return randomFilter(data.collections.music, 8);
     },
-    metaTitle: data => `${data.item.name} - ${data.item.artist} - Music Collection`
+    metaTitle: data =>
+      `${data.item.data.title} - ${data.item.data.artist} - Music Collection`
   }
 };
