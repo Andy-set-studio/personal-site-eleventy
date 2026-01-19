@@ -39,6 +39,8 @@
                 {% endfor %}
                 </ul>
               </dd>
+              <dt>Added on</dt>
+              <dd>{{ item.data.pubDate | dateFilter }}</dd>
             </dl>
             <p>
               <a href="https://openscrobbler.com/scrobble/album/view/{{ item.data.artist | urlEncodeFilter }}/{{ item.data.title | urlEncodeFilter }}">Scrobble this album</a>
