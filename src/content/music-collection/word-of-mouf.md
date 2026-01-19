@@ -1,9 +1,9 @@
 ---
 title: 'Word Of Mouf'
 artist: 'Ludacris'
-cover: '1768826612405-148.jpeg'
+cover: '1768832682966-298.jpeg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: 'Ancient dreams In A Modern land'
 artist: 'Marina'
-cover: '1768826605306-427.jpeg'
+cover: '1768832676979-81.jpeg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

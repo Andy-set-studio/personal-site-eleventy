@@ -1,9 +1,9 @@
 ---
 title: 'Jailbreak'
 artist: 'Thin Lizzy'
-cover: '1768826597771-754.jpg'
+cover: '1768832670533-179.jpg'
 formats: ['Vinyl']
 tags: ['Masterpiece']
-pubDate: 2022-08-15T12:11:00.000Z']
+pubDate: 2022-08-15T12:11:00.000Z
 ---
 

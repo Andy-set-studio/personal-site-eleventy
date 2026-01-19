@@ -1,9 +1,9 @@
 ---
 title: 'You’re Welcome'
 artist: 'A Day To Remember'
-cover: '1768826589979-249.jpeg'
+cover: '1768832663665-530.jpeg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

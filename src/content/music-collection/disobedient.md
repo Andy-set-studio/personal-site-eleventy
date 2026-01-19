@@ -1,9 +1,9 @@
 ---
 title: 'Disobedient'
 artist: 'Stick To Your Guns'
-cover: '1768826597951-551.jpg'
+cover: '1768832670705-732.jpg'
 formats: ['']
 tags: ['']
-pubDate: 2022-05-12T09:43:00.000Z']
+pubDate: 2022-05-12T09:43:00.000Z
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: 'Reanimation'
 artist: 'Linkin Park'
-cover: '1768826598590-535.jpeg'
+cover: '1768832671243-645.jpeg'
 formats: ['Vinyl']
 tags: ['Top 10']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

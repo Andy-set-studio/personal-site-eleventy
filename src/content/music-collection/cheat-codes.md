@@ -1,9 +1,9 @@
 ---
 title: 'Cheat Codes'
 artist: 'Danger Mouse'
-cover: '1768826603348-958.jpg'
+cover: '1768832675359-499.jpg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-08-19T10:12:00.000Z']
+pubDate: 2022-08-19T10:12:00.000Z
 ---
 

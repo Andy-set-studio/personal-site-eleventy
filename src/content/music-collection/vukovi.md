@@ -1,9 +1,9 @@
 ---
 title: 'Vukovi'
 artist: 'Vukovi'
-cover: '1768826598496-573.jpeg'
+cover: '1768832671143-864.jpeg'
 formats: ['CD']
 tags: ['']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

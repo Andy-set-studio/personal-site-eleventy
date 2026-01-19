@@ -1,9 +1,9 @@
 ---
 title: 'The Documentary'
 artist: 'The Game'
-cover: '1768826596061-195.jpg'
+cover: '1768832669126-467.jpg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-09-23T15:50:00.000Z']
+pubDate: 2022-09-23T15:50:00.000Z
 ---
 

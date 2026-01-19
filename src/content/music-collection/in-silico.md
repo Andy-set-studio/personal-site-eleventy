@@ -1,9 +1,9 @@
 ---
 title: 'In Silico'
 artist: 'Pendulum'
-cover: '1768826608632-892.jpg'
+cover: '1768832679906-952.jpg'
 formats: ['CD']
 tags: ['']
-pubDate: 2022-04-16T08:35:00.000Z']
+pubDate: 2022-04-16T08:35:00.000Z
 ---
 

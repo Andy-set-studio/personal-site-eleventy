@@ -1,9 +1,9 @@
 ---
 title: 'The College Dropout'
 artist: 'Kanye West'
-cover: '1768826609874-534.jpeg'
+cover: '1768832680917-5.jpeg'
 formats: ['Vinyl']
 tags: ['']
-pubDate: 2022-03-02T22:08:00.000Z']
+pubDate: 2022-03-02T22:08:00.000Z
 ---
 

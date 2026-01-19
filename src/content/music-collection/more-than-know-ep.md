@@ -1,9 +1,9 @@
 ---
 title: 'More Than Know EP'
 artist: 'Cantebury'
-cover: '1768826607811-660.jpg'
+cover: '1768832679105-893.jpg'
 formats: ['Digital']
 tags: ['']
-pubDate: 2022-03-04T08:51:00.000Z']
+pubDate: 2022-03-04T08:51:00.000Z
 ---
 

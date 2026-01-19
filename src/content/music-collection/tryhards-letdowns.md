@@ -1,9 +1,9 @@
 ---
 title: 'Tryhards & Letdowns'
 artist: 'Contender'
-cover: '1768826612008-263.jpg'
+cover: '1768832682570-153.jpg'
 formats: ['Digital']
 tags: ['']
-pubDate: 2022-03-29T13:25:00.000Z']
+pubDate: 2022-03-29T13:25:00.000Z
 ---
 
