@@ -21,52 +21,28 @@
       {% if item %}
       <div class="sidebar mt-s">
         <div>
-          <img src="{{ item.cover }}" alt="{{ item.name }} cover" /> 
+          <img src="/images/music-collection/{{ item.data.cover }}" alt="{{ item.data.title }} cover" />
         </div>
         <div class="flow">
-          <h1>{{ item.name }}</h1>
+          <h1>{{ item.data.title }}</h1>
           <div class="flow flow-space-m-l">
             <dl>
               <dt>Artist</dt>
-              <dd>{{ item.artist }}</dd>
+              <dd>{{ item.data.artist }}</dd>
               <dt>Formats</dt>
               <dd>
                 <ul role="list" class="cluster m-[0] gutter-xs">
-                {% for format in item.formats %}
+                {% for format in item.data.formats %}
                   <li>
                     <a href="/music-collection/{{ format | slug }}">{{ format }}</a>
                   </li>
                 {% endfor %}
                 </ul>
               </dd>
-              {% if item.lastFMTags %}
-                <dt>Top Last.FM tags</dt>
-                <dd>
-                    <ul role="list" class="cluster m-[0] gutter-xs">
-                      {% for tag in item.lastFMTags %}
-                        <li>
-                          <a href="{{ tag.url }}">{{ tag.name }}</a> 
-                        </li>
-                      {% endfor %}
-                    </ul>
-                </dd>
-              {% endif %}
             </dl>
             <p>
-              <a href="https://openscrobbler.com/scrobble/album/view/{{ item.artist | urlEncodeFilter }}/{{ item.name | urlEncodeFilter }}">Scrobble this album</a>
+              <a href="https://openscrobbler.com/scrobble/album/view/{{ item.data.artist | urlEncodeFilter }}/{{ item.data.title | urlEncodeFilter }}">Scrobble this album</a>
             </p>
-            {% if item.tracks %}
-            <div class="prose flow">
-              <h2>Tracks</h2>
-              <ol>
-                {% for track in item.tracks %}
-                <li>
-                  {{ track.name }}
-                </li>
-                {% endfor %}
-              </ol>
-            </div>
-            {% endif %}
           </div>
         </div>
       </div>
@@ -76,10 +52,10 @@
       <ul class="grid" role="list">
       {% for item in items %}
         <li>
-          <a href="/music-collection/{{ item.name | sanitizeNameFilter | slug }}/" class="flow flow-space-2xs">
-            <img src="{{ item.cover }}" alt="Cover for {{ item.name }}" loading="lazy" />
-            <p><strong>{{ item.name }}</strong></p>
-            <p class="text-step-0">{{ item.artist }}</p>
+          <a href="/music-collection/{{ item.fileSlug }}/" class="flow flow-space-2xs">
+            <img src="/images/music-collection/{{ item.data.cover }}" alt="Cover for {{ item.data.title }}" loading="lazy" />
+            <p><strong>{{ item.data.title }}</strong></p>
+            <p class="text-step-0">{{ item.data.artist }}</p>
           </a>
         </li>
       {% endfor %}

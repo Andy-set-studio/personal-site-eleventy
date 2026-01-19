@@ -13,7 +13,6 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 // Collections
 const blog = require('./src/collections/blog.js');
-const music = require('./src/collections/music.js');
 
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
@@ -34,7 +33,9 @@ module.exports = config => {
 
   // Returns a collection of blog posts from WordPress in reverse date order
   config.addCollection('blog', blog);
-  config.addCollection('music', music);
+  config.addCollection('music', collection =>
+    collection.getFilteredByGlob('./src/content/music-collection/*.md')
+  );
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
