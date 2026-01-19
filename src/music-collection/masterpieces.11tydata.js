@@ -4,7 +4,7 @@ module.exports = {
   eleventyComputed: {
     items: data => {
       return randomFilter(
-        data.collections.music.filter(item => item.tags.includes('Masterpiece'))
+        data.collections.music.filter(item => item.data.tags.includes('Masterpiece'))
       );
     }
   }

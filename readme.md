@@ -1,6 +1,6 @@
 # Andy’s personal site
 
-<https://andy-bell.co.uk>
+<https://bell.bz>
 
 This is my site, but I thought I'd share the code. Feel free to take what you need, **but don't rip the whole thing off because that's not cool**.
 

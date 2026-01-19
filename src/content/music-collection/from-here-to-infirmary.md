@@ -1,0 +1,9 @@
+---
+title: 'From Here to Infirmary'
+artist: 'Alkaline Trio'
+cover: '1768832662761-770.jpg'
+formats: ['CD']
+tags: ['']
+pubDate: 2022-03-31T15:05:00.000Z
+---
+

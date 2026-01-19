@@ -4,7 +4,7 @@ module.exports = {
   eleventyComputed: {
     items: data => {
       return sortByArtistFilter(
-        data.collections.music.filter(x => x.formats.includes(data.format))
+        data.collections.music.filter(x => x.data.formats.includes(data?.format))
       );
     }
   }
