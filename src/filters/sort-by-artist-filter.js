@@ -1,7 +1,7 @@
 module.exports = items =>
   items.sort((a, b) => {
-    let aArtist = a.artist;
-    let bArtist = b.artist;
+    let aArtist = a.data.artist;
+    let bArtist = b.data.artist;
 
     if (aArtist.startsWith('The ')) {
       aArtist = aArtist.slice(4);
